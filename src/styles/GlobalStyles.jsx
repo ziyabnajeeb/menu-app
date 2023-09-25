@@ -2,13 +2,13 @@ import { Global } from '@emotion/react';
 import tw, { css, theme, GlobalStyles as BaseStyles } from 'twin.macro';
 
 const purple = theme`colors.purple.500`;
-const electric = theme`colors.electric`;
-const ribbon = theme`colors.ribbon`;
 
 const customStyles = css`
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap');
+
   html {
     height: 100%;
-    font-family: Inter, 'system-ui';
+    font-family: 'Raleway', sans-serif;
   }
 
   h1,
@@ -19,19 +19,18 @@ const customStyles = css`
   h6,
   p,
   span {
-    font-family: Inter, 'system-ui';
+    font-family: 'Raleway', sans-serif;
   }
 
   @supports (font-variation-settings: normal) {
     html {
-      font-family: Inter, 'system-ui';
+      font-family: 'Raleway', sans-serif;
     }
   }
 
   body {
     height: 100%;
     -webkit-tap-highlight-color: ${purple};
-    font-family: Inter, 'system-ui';
     ${tw`antialiased`}
   }
 

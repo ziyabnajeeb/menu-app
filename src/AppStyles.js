@@ -1,9 +1,11 @@
-import tw, { styled } from 'twin.macro';
+import tw, { css, styled } from 'twin.macro';
 
 export const Main = styled.main(({ hasBackground }) => [
-  tw`flex flex-col items-center justify-center w-screen h-screen px-6`,
+  tw`flex h-screen w-screen flex-col px-6`,
   hasBackground ? tw`bg-gradient-to-br from-slate-200 to-slate-50` : tw`bg-slate-200`,
 ]);
-
-export const Section = tw.section`container bg-white md:w-3/5 lg:w-[65%] rounded-lg`;
+export const Section = tw.section`container`;
 export const SectionHeading = tw.div``;
+export const SectionHeadingText = css`
+  ${tw`mb-2 px-4 text-center font-extrabold text-4xl text-slate-600 after:(mx-auto block w-32 border-amber-400 border-b-8 pt-5 text-center content-[''])`}
+`;

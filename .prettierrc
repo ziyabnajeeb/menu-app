@@ -10,5 +10,5 @@
   "jsxBracketSameLine": true,
   "proseWrap": "preserve",
   "arrowParens": "always",
-  "plugins": ["prettier-plugin-tailwindcss"]
+  "plugins": ["prettier-plugin-tailwindcss", "prettier-plugin-twin.macro"]
 }

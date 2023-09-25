@@ -1,13 +1,11 @@
-import 'twin.macro';
-import { Main, Section, SectionHeading } from './AppStyles';
+import { Main, Section, SectionHeading, SectionHeadingText } from './AppStyles';
 
 const App = () => (
   <Main>
-    <Section tw="grid xl:grid-cols-2 gap-4 py-4">
-      <SectionHeading className="section-heading" tw="">
-        <h1 tw="px-4 text-2xl font-bold xl:text-right">Questions about Login</h1>
+    <Section tw="grid gap-4 border py-4 md:grid-cols-2">
+      <SectionHeading tw="col-span-full flex flex-col items-center">
+        <h1 css={SectionHeadingText}>Our Menus</h1>
       </SectionHeading>
-      
     </Section>
   </Main>
 );
