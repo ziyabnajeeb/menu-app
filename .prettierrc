@@ -1,14 +1,16 @@
 {
-  "singleQuote": true,
-  "trailingComma": "es5",
-  "endOfLine": "auto",
-  "tabWidth": 2,
   "printWidth": 120,
-  "htmlWhitespaceSensitivity": "ignore",
-  "bracketSameLine": true,
-  "bracketSpacing": true,
-  "jsxBracketSameLine": true,
-  "proseWrap": "preserve",
+  "singleQuote": true,
+  "jsxSingleQuote": false,
+  "trailingComma": "all",
+  "useTabs": false,
+  "tabWidth": 2,
+  "semi": true,
   "arrowParens": "always",
-  "plugins": ["prettier-plugin-tailwindcss", "prettier-plugin-twin.macro"]
+  "parser": "babel",
+  "plugins": ["prettier-plugin-twin.macro","@trivago/prettier-plugin-sort-imports","prettier-plugin-tailwindcss"],
+  "pluginSearchDirs": false,
+  "importOrder": ["^react", "<THIRD_PARTY_MODULES>", "^@apollo", "^@tanstack", "^@", "^[./]"],
+  "tailwindFunctions": ["tw"],
+  "tailwindAttributes": ["tw"]
 }

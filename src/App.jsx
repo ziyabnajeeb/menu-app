@@ -1,12 +1,23 @@
-import { Main, Section, SectionHeading, SectionHeadingText } from './AppStyles';
+import 'twin.macro';
+import { Main, SectionHeadingText } from './AppStyles';
+import { Categories, Menu } from './components';
+import { Container, Grid, Section, SectionHeading } from './components/ui/UITags';
 
 const App = () => (
   <Main>
-    <Section tw="grid gap-4 border py-4 md:grid-cols-2">
-      <SectionHeading tw="col-span-full flex flex-col items-center">
-        <h1 css={SectionHeadingText}>Our Menus</h1>
-      </SectionHeading>
-    </Section>
+    <Container>
+      <Grid tw="gap-4 border py-4">
+        <SectionHeading tw="col-span-full px-4">
+          <h1 css={SectionHeadingText}>Our Menus</h1>
+        </SectionHeading>
+        <Section tw="col-span-full mt-4 overflow-hidden px-4">
+          <Categories />
+        </Section>
+        <Section tw="col-span-full mt-4 px-4">
+          <Menu />
+        </Section>
+      </Grid>
+    </Container>
   </Main>
 );
 

@@ -1,5 +1,5 @@
-import { Global } from '@emotion/react';
 import tw, { css, theme, GlobalStyles as BaseStyles } from 'twin.macro';
+import { Global } from '@emotion/react';
 
 const purple = theme`colors.purple.500`;
 
@@ -9,6 +9,13 @@ const customStyles = css`
   html {
     height: 100%;
     font-family: 'Raleway', sans-serif;
+  }
+
+  .box {
+    height: 6rem;
+    line-height: 6rem;
+    text-align: center;
+    background-color: #5eead4;
   }
 
   h1,
