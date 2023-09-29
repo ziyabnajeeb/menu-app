@@ -11,6 +11,10 @@ const customStyles = css`
     font-family: 'Raleway', sans-serif;
   }
 
+  body {
+    ${tw`h-full w-full`}
+  }
+
   .box {
     height: 6rem;
     line-height: 6rem;

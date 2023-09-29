@@ -1,5 +1,4 @@
 import 'twin.macro';
-import cardImg from '../../assets/images/item-3.jpeg';
 import {
   CardWrapper,
   CardBody,
@@ -8,25 +7,23 @@ import {
   CardHeader,
   CardImage,
   CardName,
-  CardNameDesignation,
+  CardPrice,
   CardNameText,
 } from './CardStyles';
 
-const Card = () => (
+const Card = ({ title, price, img, desc }) => (
   <CardWrapper className="card">
     <CardHeader className="card-header">
-      <CardImage src={cardImg} className="card-img-top" />
+      <CardImage src={img} className="card-img-top" />
     </CardHeader>
     <CardBody>
       <CardName>
-        <CardNameText>how are you</CardNameText>
-        <CardNameDesignation>ds</CardNameDesignation>
+        <CardNameText>{title}</CardNameText>
+        <CardPrice>{price}</CardPrice>
       </CardName>
 
       <CardContent>
-        <CardContentText>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, ratione?
-        </CardContentText>
+        <CardContentText>{desc}</CardContentText>
       </CardContent>
     </CardBody>
   </CardWrapper>

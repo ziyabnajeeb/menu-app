@@ -2,7 +2,7 @@ import tw, { styled, css, theme } from 'twin.macro';
 
 const Button = styled.button(({ variant, isSmall }) => [
   // The common button styles added with the tw import
-  tw`transform rounded-lg px-10 py-2 duration-300 ease-in-out`,
+  tw`transform rounded px-4 py-2 duration-300 ease-in-out`,
 
   // Use the variant grouping feature to add variants to multiple classes
   tw`hocus:(scale-100)`,
@@ -20,11 +20,11 @@ const Button = styled.button(({ variant, isSmall }) => [
   ],
 
   variant === 'ghost' && [
-    tw`font-bold text-amber-800 hover:bg-amber-300  hover:text-amber-700 hover:ring hover:ring-amber-400/70`,
+    tw`font-bold text-amber-800 hover:bg-amber-700/90  hover:text-amber-200 hover:ring hover:ring-amber-800/70`,
   ],
 
   // Conditional props can be used
-  isSmall ? tw`text-sm` : tw`text-lg`,
+  isSmall ? tw`text-sm md:text-base` : tw`text-lg`,
 
   // The theme import can supply values from your tailwind.config.js
   css`

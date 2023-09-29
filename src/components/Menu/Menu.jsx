@@ -2,12 +2,11 @@ import 'twin.macro';
 import Card from '../Card/Card';
 import { Grid } from '../ui/UITags';
 
-const Menu = () => (
+const Menu = ({ items }) => (
   <Grid tw="gap-8 lg:grid-cols-2">
-    <Card />
-    <Card />
-    <Card />
-    <Card />
+    {items.map((menuItem) => (
+      <Card key={menuItem.id} {...menuItem} />
+    ))}
   </Grid>
 );
 
