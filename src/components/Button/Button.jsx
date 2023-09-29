@@ -2,7 +2,7 @@ import tw, { styled, css, theme } from 'twin.macro';
 
 const Button = styled.button(({ variant, isSmall }) => [
   // The common button styles added with the tw import
-  tw`transform rounded px-4 py-2 duration-300 ease-in-out`,
+  tw`transform rounded px-4 py-2 capitalize duration-300 ease-in-out`,
 
   // Use the variant grouping feature to add variants to multiple classes
   tw`hocus:(scale-100)`,
